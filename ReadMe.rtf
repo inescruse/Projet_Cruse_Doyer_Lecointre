@@ -1,0 +1,195 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2759
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Calibri;
+}
+{\colortbl;\red255\green255\blue255;\red25\green25\blue25;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c12941\c12941\c12941;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14560\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs32 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 TITRE\'a0:
+\f1\b0  SIMULATEUR DE CARNET D'ORDRES EN PYTHON
+\f2\fs29\fsmilli14667 \cf3 \ulnone \
+
+\f1\fs32 \cf2 \'a0
+\f2\fs29\fsmilli14667 \cf3 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f0\b\fs32 \cf2 DESCRIPTION
+\f2\b0\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \'a0
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 Ce projet consiste en une simulation d'un carnet d'ordres pour les march\'e9s financiers, permettant de g\'e9rer des ordres d'achat et de vente dans un environnement de trading \'e9lectronique. Le simulateur offre des fonctionnalit\'e9s pour ajouter, ex\'e9cuter, et annuler des ordres, ainsi que simuler des fixings de prix d'ouverture et de fermeture. Cet outil est con\'e7u pour aider les d\'e9veloppeurs, les \'e9tudiants et les professionnels de la finance \'e0 comprendre la dynamique des carnets d'ordres et leur impact sur la d\'e9termination des prix sur les march\'e9s.
+\f2\fs29\fsmilli14667 \cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs32 \cf2 \'a0
+\f2\fs29\fsmilli14667 \cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs32 \cf2 INSTALLATION
+\f2\b0\fs29\fsmilli14667 \cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs32 \cf2 \'a0
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \ul Pr\'e9requis
+\f2\fs29\fsmilli14667 \cf3 \ulnone \
+
+\f1\fs32 \cf2 Assurez-vous d'avoir Python install\'e9 sur votre machine (Python 3.6 ou plus r\'e9cent est recommand\'e9). Aucune d\'e9pendance externe n'est requise pour ex\'e9cuter ce projet.
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \'a0
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \ul T\'e9l\'e9chargement
+\f2\fs29\fsmilli14667 \cf3 \ulnone \
+
+\f1\fs32 \cf2 Pour installer le simulateur de carnet d'ordres, clonez ce d\'e9p\'f4t GitHub en utilisant la commande suivante : git clone [URL_DU_DEPOT_GITHUB]
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 Remplacez `[URL_DU_DEPOT_GITHUB]` par l'URL du d\'e9p\'f4t de votre projet.
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \'a0
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \ul Configuration
+\f2\fs29\fsmilli14667 \cf3 \ulnone \
+
+\f1\fs32 \cf2 Aucune configuration initiale n'est n\'e9cessaire pour commencer avec ce simulateur. Le projet est pr\'eat \'e0 \'eatre utilis\'e9 d\'e8s que vous avez clon\'e9 le d\'e9p\'f4t.
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \'a0
+\f2\fs29\fsmilli14667 \cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs32 \cf2 UTILISATION
+\f2\b0\fs29\fsmilli14667 \cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs32 \cf2 \'a0
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \ul Cr\'e9ation d'une instance de `OrderBook`
+\f2\fs29\fsmilli14667 \cf3 \ulnone \
+
+\f1\fs32 \cf2 Pour d\'e9marrer, cr\'e9ez une instance de la classe `OrderBook` en sp\'e9cifiant la taille du tick et la taille du lot. Exemple : order_book = OrderBook(tick_size=0.01, lot_size=10)
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \'a0
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \ul Ajout d'ordres
+\f2\fs29\fsmilli14667 \cf3 \ulnone \
+
+\f1\fs32 \cf2 Pour ajouter un ordre au carnet, utilisez la m\'e9thode `add_order` :
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 order_book.add_order('buy', 100.05, 100, 'participant1', 'maker')
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 order_book.add_order('sell', 101.05, 50, 'participant2', 'maker')
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \'a0
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \ul Ex\'e9cution du fixing
+\f2\fs29\fsmilli14667 \cf3 \ulnone \
+
+\f1\fs32 \cf2 Pour ex\'e9cuter le fixing et d\'e9terminer le prix de march\'e9 :
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 fixing_price = order_book.fixing()
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 print(f"Prix de fixing : \{fixing_price\}")
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \'a0
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \ul Affichage du carnet d'ordres
+\f2\fs29\fsmilli14667 \cf3 \ulnone \
+
+\f1\fs32 \cf2 Pour voir l'\'e9tat actuel du carnet d'ordres :
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 order_book.print_order_book()
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \'a0
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \ul Affichage de l'historique des transactions
+\f2\fs29\fsmilli14667 \cf3 \ulnone \
+
+\f1\fs32 \cf2 Pour consulter l'historique des transactions effectu\'e9es :
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 print("\\nHistorique des transactions:")
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 for transaction in order_book.get_transaction_history():
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \'a0 \'a0 print(transaction)
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \'a0
+\f2\fs29\fsmilli14667 \cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs32 \cf2 CONTRIBUTIONS
+\f2\b0\fs29\fsmilli14667 \cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs32 \cf2 \'a0
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \ul Clonage du d\'e9p\'f4t
+\f2\fs29\fsmilli14667 \cf3 \ulnone \
+
+\f1\fs32 \cf2 Pour contribuer au projet, commencez par cloner le d\'e9p\'f4t :
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 git clone [URL_DU_DEPOT_GITHUB]
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \'a0
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \ul Soumission de contributions
+\f2\fs29\fsmilli14667 \cf3 \ulnone \
+
+\f1\fs32 \cf2 Apr\'e8s avoir apport\'e9 vos modifications ou am\'e9liorations, soumettez une pull request via GitHub. Assurez-vous de d\'e9crire clairement les changements propos\'e9s et leur raison.
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \'a0
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \ul Signalement de probl\'e8mes
+\f2\fs29\fsmilli14667 \cf3 \ulnone \
+
+\f1\fs32 \cf2 Si vous rencontrez des probl\'e8mes ou des bugs, n'h\'e9sitez pas \'e0 ouvrir un issue sur le d\'e9p\'f4t GitHub du projet avec une description d\'e9taill\'e9e du probl\'e8me et, si possible, des \'e9tapes pour reproduire le probl\'e8me.
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 \'a0
+\f2\fs29\fsmilli14667 \cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs32 \cf2 CONCLUSION
+\f2\b0\fs29\fsmilli14667 \cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs32 \cf2 \'a0
+\f2\fs29\fsmilli14667 \cf3 \
+
+\f1\fs32 \cf2 Ce simulateur de carnet d'ordres est un projet open-source et les contributions pour am\'e9liorer ou \'e9tendre ses fonctionnalit\'e9s sont toujours les bienvenues. Ce simulateur est destin\'e9 \'e0 \'eatre utilis\'e9 comme outil p\'e9dagogique et de d\'e9veloppement pour mieux comprendre le fonctionnement des march\'e9s financiers.
+\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+}
